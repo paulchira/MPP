@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerClient">
+    <left>
+        <GridPane>
+            <Label text="Nume" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label text="Prenume" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label text="Adresa" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
+            <TextField fx:id="txt_nume" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <TextField fx:id="txt_prenume" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextField fx:id="txt_adresa" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+
+
+            <!--<Button text="Filtrari" GridPane.rowIndex="7" GridPane.columnIndex="1" maxWidth="Infinity" maxHeight="Infinity" onAction="#filtruView"/>
+            -->
+        </GridPane>
+    </left>
+
+
+    <center>
+        <TableView fx:id="table">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"></TableView>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn text="ID" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Nume" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nume"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Prenume" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="prenume"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Adresa" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="adresa"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+
+        </TableView>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<BorderPane fx:id="bp" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.gui.ControllerAngajat">
+    <center>
+        <GridPane>
+            <Label text="Username" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label text="Password" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+            <TextField fx:id="txt_username" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <PasswordField fx:id="txt_password" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+
+            <Button text="LOGIN" GridPane.rowIndex="2" GridPane.columnIndex="0" maxWidth="Infinity" maxHeight="Infinity" onAction="#login"/>
+        </GridPane>
+    </center>
+
+</BorderPane>

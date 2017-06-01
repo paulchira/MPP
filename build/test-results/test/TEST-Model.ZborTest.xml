@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Model.ZborTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2017-05-08T20:02:04" hostname="DESKTOP-2MOBKL4" time="0.006">
+  <properties/>
+  <testcase name="getData" classname="Model.ZborTest" time="0.001"/>
+  <testcase name="getDest" classname="Model.ZborTest" time="0.0"/>
+  <testcase name="getId" classname="Model.ZborTest" time="0.0"/>
+  <testcase name="setId" classname="Model.ZborTest" time="0.0"/>
+  <testcase name="setNrLoc" classname="Model.ZborTest" time="0.0"/>
+  <testcase name="getNrLoc" classname="Model.ZborTest" time="0.0"/>
+  <testcase name="setData" classname="Model.ZborTest" time="0.001"/>
+  <testcase name="setDest" classname="Model.ZborTest" time="0.0"/>
+  <testcase name="setAeroport" classname="Model.ZborTest" time="0.0"/>
+  <testcase name="getAeroport" classname="Model.ZborTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
